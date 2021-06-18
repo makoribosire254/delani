@@ -86,3 +86,8 @@ justify-content: center;
 li{
 	display: inline-block;
 }
+
+.social{
+	display: flex;
+	justify-content: center;
+}
