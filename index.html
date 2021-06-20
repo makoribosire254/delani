@@ -83,10 +83,10 @@ This iterative process allows for changes as business requirements evolve.</p></
 
 
       <div class="column" style="width:25%">
+      <div class="blur">
       <img src="./assets/portfolio/work1.jpg" style="width:100%">
-       <div class="middle">
-       <div class="text">Portfolio</div>
-       </div>
+       <h3>portfolio</h3>
+      </div>
       </div>
 
 
@@ -119,14 +119,14 @@ This iterative process allows for changes as business requirements evolve.</p></
 
 
    <div class="form-1">
-    <form name="myForm">
+    <form name="myForm" onsubmit="return fn1()" method="get" action="mailto:makoribosire254@gmail.com">
       <h2 style="color: white;text-align: center;"><strong>CONTACT US</strong></h2>
-      <input type="text"  name="name" placeholder= "Name..." style="border:1px solid white" required>
-      <input type="text" name="email" placeholder="Email..." style="border:1px solid white" required><br>
-      <textarea rows="15" cols="100" name="comment" form="usrform" style="background-color: transparent;border:1px solid white;
+      <input type="text"  id="txtName"  name="name" placeholder= "Name..." style="border:1px solid white" required>
+      <input type="text" id="txtEmail" name="email" placeholder="Email..." style="border:1px solid white" required><br>
+      <textarea id="comments" name="comments" rows="15" cols="100"  style="background-color: transparent;border:1px solid white;
        outline: none;border-radius: 5px" placeholder="Your message here...">
    </textarea><br><br><br><br>
-   <button onclick="fn1()" id="btn1">Submit</button>
+   <button id="btn1" value="submit" onsubmit="fn1()">Submit</button>
     </form>
    </div>
 

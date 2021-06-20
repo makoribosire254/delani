@@ -1,16 +1,13 @@
 // script contact form and input
 
 function fn1(){
-name=document.forms["myForm"]["name"].value;
-email=document.forms["myForm"]["email"].value;
-if(name==""){
-  alert("Enter Name");
+var name= document.getElementById('txtName').value;
+var email=document.getElementById('txtEmail').value;
+var comments=document.getElementById("comments").value;
+alert(comments);
+alert(name +  ""  + "Than you for contacting us.");
 }
-if(email==""){
-  alert("Enter Email");
-}
-}
-console.log("Name and email entered");
+
 
 //Toggling the description upon clicking the services_icons
 $(document).ready(function(){

@@ -105,6 +105,14 @@ font-size: 1.5rem;
   clear: both;
   display: table;
 }
+.blur : not(img){
+	position: absolute;
+	top: 30%;
+	z-index: 1;
+	color: white;
+	text-align: center;
+	width: 100%;
+}
 
 /*Styling the form content*/
 input[type=text]{
