@@ -70,18 +70,6 @@ color: white;
 
 }
 
-/*working on what we do
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 250px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 /*what we do section*/
 .wedo{
 padding-top: 80px;
@@ -91,8 +79,9 @@ flex-direction: row;
 width: 100%;
 }
 
-#p_hide{
-	display:none;
+#p_hide1,#p_hide2,#p_hide3{
+font-size: 1.5rem;
+
 }
 
 /*styling portfolio*/
@@ -101,6 +90,7 @@ width: 100%;
 	padding-top: 50px;
 	padding-bottom: 50px;
   text-align: center;
+
 }
 
 .column {
@@ -116,51 +106,17 @@ width: 100%;
   display: table;
 }
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-
-.column:hover .image {
-  opacity: 0.3;
-}
-
-.column:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
 /*Styling the form content*/
 input[type=text]{
   display: inline-block;
   padding: 12px 20px;
   margin: 15px 20px;
-  display: inline-block;
   border: 1px solid #ccc;
   background-color: transparent;
   box-sizing: border-box;
   outline: none;
   align-content: center;
+	width: 30%
 }
 
 input[type=textarea]{
@@ -169,13 +125,14 @@ background-color: transparent;
 
 .form-1{
   padding-top: 60px;
-display: flex;
-justify-content: center;
- background-image: url(../assets/backgrounds/c_image.jpg);
+  display: flex;
+  justify-content: center;
+  background-image: url(../assets/backgrounds/c_image.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 500px;
+
 }
 
 li{

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Delani Studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script type="text/javascript" href="JS/script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="JS/script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -24,7 +24,7 @@
       <img src="./assets/mouse_click.png">
     </section>
 
-<--- About us section --->
+
 
     <div class="About_Us">
         <h2><b>ABOUT US</b></h2>
@@ -35,7 +35,7 @@
         Then we help translate them into effective and elegant solutions</p>
     </div>
 
-<--- Servises section --->
+
 
     <div class="services">
       <h2><b>SERVICES</b></h2>
@@ -45,83 +45,90 @@
       based on your requirements,we can provide a complete offering or just the pieces you need</p>
     </div>
 
-<--- What we do section --->
+
 
     <div class="wedo" align="center">
     <h2>WHAT WE DO</h2><br><br>
     <div class="row">
     <div class="column" style="width:33.33%">
 
-    <span class="clickable"><img src="./assets/services_icons/design_icon.png"/>
-    <h3>DESIGN</h3></span>
-    <div id="p_hide">
+    <img id="dw1" src="./assets/services_icons/design_icon.png"/>
+    <h3>DESIGN</h3>
+    <div id="p_hide1">
     <p>Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.
   Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
    </div>
    </div>
 
     <div class="column" style="width:33.33%">
-      <img src= "./assets/services_icons/dev_icon.png">
+      <img id="dw2"src= "./assets/services_icons/dev_icon.png">
       <h3>DEVELOPMENT</h3>
-      <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.
-They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
+      <div id="p_hide2"><p>All engineers are fluent in the latest enterprise, mobile and web development technologies.
+They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p></div>
     </div>
 
      <div class="column" style="width:33.33%">
-      <img src= "./assets/services_icons/product_icon.png">
+      <img  id="dw3"src= "./assets/services_icons/product_icon.png">
       <h3>PRODUCT MANAGEMENT</h3>
-      <p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live.
-This iterative process allows for changes as business requirements evolve.</p>
+      <div id="p_hide3"><p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live.
+This iterative process allows for changes as business requirements evolve.</p></div>
     </div>
     </div>
     </div>
 
-<--- Start of Portfolio section --->
 
    <div class="portfolio_container">
     <h2>PORTFOLIO</h2>
     <div class="row">
-      <div class="column">
-        <img src="./assets/portfolio/work1.jpg" style="width:100%">
+
+
+      <div class="column" style="width:25%">
+      <img src="./assets/portfolio/work1.jpg" style="width:100%">
+       <div class="middle">
+       <div class="text">Portfolio</div>
+       </div>
       </div>
-      <div class="column">
+
+
+      <div class="column" style="width:25%">
         <img src= "./assets/portfolio/work2.jpg"style="width:100%">
       </div>
-      <div class="column">
+      <div class="column" style="width:25%">
         <img src="./assets/portfolio/work3.jpg" style="width:100%">
       </div>
-      <div class="column">
+      <div class="column" style="width:25%">
         <img src="./assets/portfolio/work4.jpg" style="width:100%">
       </div>
-      <div class="column">
+    </div>
+    <div class="row">
+      <div class="column" style="width:25%">
         <img src="./assets/portfolio/work5.jpg" style="width:100%">
       </div>
-      <div class="column">
+      <div class="column" style="width:25%">
         <img src="./assets/portfolio/work6.jpg" style="width:100%">
       </div>
-      <div class="column">
+      <div class="column" style="width:25%">
         <img src="./assets/portfolio/work7.jpg" style="width:100%">
       </div>
-      <div class="column">
+      <div class="column" style="width:25%">
         <img src="./assets/portfolio/work8.jpg" style="width:100%">
       </div>
     </div>
    </div>
 
-<--- Start of Contact section --->
+
 
    <div class="form-1">
     <form name="myForm">
       <h2 style="color: white;text-align: center;"><strong>CONTACT US</strong></h2>
       <input type="text"  name="name" placeholder= "Name..." style="border:1px solid white" required>
       <input type="text" name="email" placeholder="Email..." style="border:1px solid white" required><br>
-      <textarea rows="15" cols="100" name="comment" form="usrform" style="background-color: transparent;border:1px solid white; outline: none;border-radius: 5px" placeholder="Your message here...">
+      <textarea rows="15" cols="100" name="comment" form="usrform" style="background-color: transparent;border:1px solid white;
+       outline: none;border-radius: 5px" placeholder="Your message here...">
    </textarea><br><br><br><br>
    <button onclick="fn1()" id="btn1">Submit</button>
     </form>
    </div>
-
-<--- start of social div --->
 
    <div class="social">
     <ul>
@@ -155,7 +162,7 @@ This iterative process allows for changes as business requirements evolve.</p>
     </ul>
    </div>
 
-<--- Footer Region --->
+
 
    <div class="footer"><p>DELANI STUDIO<br>
                               2009</p></div>
