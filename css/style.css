@@ -91,6 +91,10 @@ flex-direction: row;
 width: 100%;
 }
 
+#p_hide{
+	display:none;
+}
+
 /*styling portfolio*/
 
 .portfolio_container{
